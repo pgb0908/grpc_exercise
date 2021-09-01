@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/gRPC_exercise.dir/main.cpp.o -o gRPC_exercise  server/libserver.a 
