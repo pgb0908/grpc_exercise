@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/bong/CLionProjects/gRPC_exercise/server
+CXX_INCLUDES = -I/home/bong/CLionProjects/gRPC_exercise/server -I/home/bong/CLionProjects/gRPC_exercise/server/proto
 
 CXX_FLAGS = -g -std=gnu++11
 
