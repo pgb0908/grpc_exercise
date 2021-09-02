@@ -1,6 +1,6 @@
 /home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/CMakeFiles/gRPC_exercise.dir
-/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/server/CMakeFiles/rebuild_cache.dir
-/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/server/CMakeFiles/edit_cache.dir
-/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/server/CMakeFiles/server.dir
+/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/greetings/CMakeFiles/edit_cache.dir
+/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/greetings/CMakeFiles/rebuild_cache.dir
+/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/greetings/CMakeFiles/target.dir

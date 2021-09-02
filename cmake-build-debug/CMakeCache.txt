@@ -161,6 +161,21 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=gRPC_exercise
 
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=0.0.1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
+
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
 
@@ -229,8 +244,20 @@ ProcessorCount_cmd_nproc:FILEPATH=/usr/bin/nproc
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/sbin/sysctl
 
+//The directory containing a CMake configuration file for Protobuf.
+Protobuf_DIR:PATH=/usr/local/lib/cmake/protobuf
+
+//The directory containing a CMake configuration file for Thread::Thread.
+"Thread::Thread_DIR":PATH=Thread::Thread_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for absl.
 absl_DIR:PATH=/usr/local/lib/cmake/absl
+
+//Value Computed by CMake
+gRPC_CPP_Greetings_BINARY_DIR:STATIC=/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/greetings
+
+//Value Computed by CMake
+gRPC_CPP_Greetings_SOURCE_DIR:STATIC=/home/bong/CLionProjects/gRPC_exercise/greetings
 
 //The directory containing a CMake configuration file for gRPC.
 gRPC_DIR:PATH=/usr/local/lib/cmake/grpc

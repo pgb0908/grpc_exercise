@@ -130,17 +130,17 @@ gRPC_exercise/fast:
 .PHONY : gRPC_exercise/fast
 
 #=============================================================================
-# Target rules for targets named server
+# Target rules for targets named target
 
 # Build rule for target.
-server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server
-.PHONY : server
+target: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 target
+.PHONY : target
 
 # fast build rule for target.
-server/fast:
-	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/build
-.PHONY : server/fast
+target/fast:
+	$(MAKE) $(MAKESILENT) -f greetings/CMakeFiles/target.dir/build.make greetings/CMakeFiles/target.dir/build
+.PHONY : target/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -175,7 +175,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... gRPC_exercise"
-	@echo "... server"
+	@echo "... target"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

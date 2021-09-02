@@ -5,7 +5,7 @@
 		<Option title="gRPC_exercise"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\server\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\greetings\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\protobuf\;CMake Files\..\..\..\..\usr\local\lib\cmake\grpc\;CMake Files\..\..\..\..\usr\local\lib\cmake\absl\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug"/>
@@ -44,7 +44,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bong/CLionProjects/gRPC_exercise/server"/>
+					<Add directory="/home/bong/CLionProjects/gRPC_exercise/greetings"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -67,7 +67,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bong/CLionProjects/gRPC_exercise/server"/>
+					<Add directory="/home/bong/CLionProjects/gRPC_exercise/greetings"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -83,69 +83,130 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="server">
-				<Option output="/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/server/libserver.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/server"/>
+			<Target title="target">
+				<Option output="/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/greetings/libtarget.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/greetings"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bong/CLionProjects/gRPC_exercise/server"/>
-					<Add directory="/home/bong/CLionProjects/gRPC_exercise/server/proto"/>
+					<Add option="-DCARES_STATICLIB"/>
+					<Add directory="/home/bong/CLionProjects/gRPC_exercise/greetings"/>
+					<Add directory="/home/bong/CLionProjects/gRPC_exercise/greetings/proto"/>
+					<Add directory="/home/bong/CLionProjects/gRPC_exercise/greetings/CURRENT_DIR"/>
+					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/server/Makefile&quot;  VERBOSE=1 server"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/server/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/server/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/greetings/Makefile&quot;  VERBOSE=1 target"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/greetings/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/greetings/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/greetings/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="server/fast">
-				<Option output="/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/server/libserver.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/server"/>
+			<Target title="target/fast">
+				<Option output="/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/greetings/libtarget.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/greetings"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/bong/CLionProjects/gRPC_exercise/server"/>
-					<Add directory="/home/bong/CLionProjects/gRPC_exercise/server/proto"/>
+					<Add option="-DCARES_STATICLIB"/>
+					<Add directory="/home/bong/CLionProjects/gRPC_exercise/greetings"/>
+					<Add directory="/home/bong/CLionProjects/gRPC_exercise/greetings/proto"/>
+					<Add directory="/home/bong/CLionProjects/gRPC_exercise/greetings/CURRENT_DIR"/>
+					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
 					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/server/Makefile&quot;  VERBOSE=1 server/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/server/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/server/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/server/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/greetings/Makefile&quot;  VERBOSE=1 target/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/greetings/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/greetings/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/greetings/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/greetings/greetings.grpc.pb.cc">
+			<Option target="target"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/greetings/greetings.pb.cc">
+			<Option target="target"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/greetings/greetings.pb.cc.rule">
+			<Option target="target"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/greetings/greetings_client.cpp">
+			<Option target="target"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/greetings/greetings_client.h">
+			<Option target="target"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/greetings/greetings_server.cpp">
+			<Option target="target"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/greetings/greetings_server.h">
+			<Option target="target"/>
+		</Unit>
 		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/main.cpp">
 			<Option target="gRPC_exercise"/>
-		</Unit>
-		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/server/Server.cpp">
-			<Option target="server"/>
-		</Unit>
-		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/server/Server.h">
-			<Option target="server"/>
 		</Unit>
 		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/server/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\server\"/>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/greetings/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\greetings\"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/../../../../usr/local/lib/cmake/protobuf/protobuf-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\protobuf\"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/../../../../usr/local/lib/cmake/protobuf/protobuf-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\protobuf\"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/../../../../usr/local/lib/cmake/protobuf/protobuf-module.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\protobuf\"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/../../../../usr/local/lib/cmake/protobuf/protobuf-options.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\protobuf\"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/../../../../usr/local/lib/cmake/protobuf/protobuf-targets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\protobuf\"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/../../../../usr/local/lib/cmake/protobuf/protobuf-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\protobuf\"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/../../../../usr/local/lib/cmake/grpc/gRPCConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\grpc\"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/../../../../usr/local/lib/cmake/grpc/gRPCConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\grpc\"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/../../../../usr/local/lib/cmake/grpc/gRPCTargets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\grpc\"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/../../../../usr/local/lib/cmake/grpc/gRPCTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\grpc\"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/../../../../usr/local/lib/cmake/absl/abslConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\absl\"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/../../../../usr/local/lib/cmake/absl/abslConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\absl\"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/../../../../usr/local/lib/cmake/absl/abslTargets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\absl\"/>
+		</Unit>
+		<Unit filename="/home/bong/CLionProjects/gRPC_exercise/../../../../usr/local/lib/cmake/absl/abslTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\absl\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

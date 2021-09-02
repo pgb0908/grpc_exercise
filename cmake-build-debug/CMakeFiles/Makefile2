@@ -64,38 +64,38 @@ CMAKE_BINARY_DIR = /home/bong/CLionProjects/gRPC_exercise/cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/gRPC_exercise.dir/all
-all: server/all
+all: greetings/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: server/preinstall
+preinstall: greetings/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/gRPC_exercise.dir/clean
-clean: server/clean
+clean: greetings/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory server
+# Directory level rules for directory greetings
 
 # Recursive "all" directory target.
-server/all: server/CMakeFiles/server.dir/all
-.PHONY : server/all
+greetings/all: greetings/CMakeFiles/target.dir/all
+.PHONY : greetings/all
 
 # Recursive "preinstall" directory target.
-server/preinstall:
-.PHONY : server/preinstall
+greetings/preinstall:
+.PHONY : greetings/preinstall
 
 # Recursive "clean" directory target.
-server/clean: server/CMakeFiles/server.dir/clean
-.PHONY : server/clean
+greetings/clean: greetings/CMakeFiles/target.dir/clean
+.PHONY : greetings/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/gRPC_exercise.dir
 
 # All Build rule for target.
-CMakeFiles/gRPC_exercise.dir/all: server/CMakeFiles/server.dir/all
+CMakeFiles/gRPC_exercise.dir/all: greetings/CMakeFiles/target.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gRPC_exercise.dir/build.make CMakeFiles/gRPC_exercise.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gRPC_exercise.dir/build.make CMakeFiles/gRPC_exercise.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target gRPC_exercise"
@@ -103,7 +103,7 @@ CMakeFiles/gRPC_exercise.dir/all: server/CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gRPC_exercise.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gRPC_exercise.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/gRPC_exercise.dir/rule
@@ -118,30 +118,30 @@ CMakeFiles/gRPC_exercise.dir/clean:
 .PHONY : CMakeFiles/gRPC_exercise.dir/clean
 
 #=============================================================================
-# Target rules for target server/CMakeFiles/server.dir
+# Target rules for target greetings/CMakeFiles/target.dir
 
 # All Build rule for target.
-server/CMakeFiles/server.dir/all:
-	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/depend
-	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target server"
-.PHONY : server/CMakeFiles/server.dir/all
+greetings/CMakeFiles/target.dir/all:
+	$(MAKE) $(MAKESILENT) -f greetings/CMakeFiles/target.dir/build.make greetings/CMakeFiles/target.dir/depend
+	$(MAKE) $(MAKESILENT) -f greetings/CMakeFiles/target.dir/build.make greetings/CMakeFiles/target.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/CMakeFiles --progress-num=3,4,5,6,7,8 "Built target target"
+.PHONY : greetings/CMakeFiles/target.dir/all
 
 # Build rule for subdir invocation for target.
-server/CMakeFiles/server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/CMakeFiles/server.dir/all
+greetings/CMakeFiles/target.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 greetings/CMakeFiles/target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/CMakeFiles 0
-.PHONY : server/CMakeFiles/server.dir/rule
+.PHONY : greetings/CMakeFiles/target.dir/rule
 
 # Convenience name for target.
-server: server/CMakeFiles/server.dir/rule
-.PHONY : server
+target: greetings/CMakeFiles/target.dir/rule
+.PHONY : target
 
 # clean rule for target.
-server/CMakeFiles/server.dir/clean:
-	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/clean
-.PHONY : server/CMakeFiles/server.dir/clean
+greetings/CMakeFiles/target.dir/clean:
+	$(MAKE) $(MAKESILENT) -f greetings/CMakeFiles/target.dir/build.make greetings/CMakeFiles/target.dir/clean
+.PHONY : greetings/CMakeFiles/target.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

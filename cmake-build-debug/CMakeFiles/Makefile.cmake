@@ -8,30 +8,49 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
-  "CMakeFiles/3.20.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.20.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.20.2/CMakeSystem.cmake"
-  "../server/CMakeLists.txt"
-  "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCInformation.cmake"
+  "../greetings/CMakeLists.txt"
   "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCXXInformation.cmake"
   "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeCommonLanguageInclude.cmake"
   "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
   "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeFindCodeBlocks.cmake"
+  "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeFindDependencyMacro.cmake"
   "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeGenericSystem.cmake"
   "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeInitializeConfigs.cmake"
   "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeLanguageInformation.cmake"
   "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeSystemSpecificInformation.cmake"
   "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CheckCXXSourceCompiles.cmake"
+  "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CheckIncludeFileCXX.cmake"
+  "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/CheckLibraryExists.cmake"
   "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
-  "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/Compiler/GNU-C.cmake"
   "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/Compiler/GNU-CXX.cmake"
   "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/Compiler/GNU.cmake"
-  "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/Platform/Linux-GNU-C.cmake"
+  "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake"
+  "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/FindPackageMessage.cmake"
+  "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/FindThreads.cmake"
+  "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/Internal/CheckSourceCompiles.cmake"
   "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/Platform/Linux-GNU-CXX.cmake"
   "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/Platform/Linux-GNU.cmake"
   "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/Platform/Linux.cmake"
   "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/Platform/UnixPaths.cmake"
   "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/ProcessorCount.cmake"
+  "/snap/clion/163/bin/cmake/linux/share/cmake-3.20/Modules/SelectLibraryConfigurations.cmake"
+  "/usr/local/lib/cmake/absl/abslConfig.cmake"
+  "/usr/local/lib/cmake/absl/abslConfigVersion.cmake"
+  "/usr/local/lib/cmake/absl/abslTargets-noconfig.cmake"
+  "/usr/local/lib/cmake/absl/abslTargets.cmake"
+  "/usr/local/lib/cmake/grpc/gRPCConfig.cmake"
+  "/usr/local/lib/cmake/grpc/gRPCConfigVersion.cmake"
+  "/usr/local/lib/cmake/grpc/gRPCTargets-noconfig.cmake"
+  "/usr/local/lib/cmake/grpc/gRPCTargets.cmake"
+  "/usr/local/lib/cmake/protobuf/protobuf-config-version.cmake"
+  "/usr/local/lib/cmake/protobuf/protobuf-config.cmake"
+  "/usr/local/lib/cmake/protobuf/protobuf-module.cmake"
+  "/usr/local/lib/cmake/protobuf/protobuf-options.cmake"
+  "/usr/local/lib/cmake/protobuf/protobuf-targets-noconfig.cmake"
+  "/usr/local/lib/cmake/protobuf/protobuf-targets.cmake"
   )
 
 # The corresponding makefile is:
@@ -43,11 +62,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "server/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "greetings/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/gRPC_exercise.dir/DependInfo.cmake"
-  "server/CMakeFiles/server.dir/DependInfo.cmake"
+  "greetings/CMakeFiles/target.dir/DependInfo.cmake"
   )

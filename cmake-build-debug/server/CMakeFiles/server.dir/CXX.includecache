@@ -6,3 +6,17 @@
 
 #IncludeRegexTransform: 
 
+/home/bong/CLionProjects/gRPC_exercise/server/Server.cpp
+Server.h
+/home/bong/CLionProjects/gRPC_exercise/server/Server.h
+
+/home/bong/CLionProjects/gRPC_exercise/server/Server.h
+grpcpp/grpcpp.h
+-
+grpcpp/server.h
+-
+grpcpp/server_builder.h
+-
+grpcpp/server_context.h
+-
+

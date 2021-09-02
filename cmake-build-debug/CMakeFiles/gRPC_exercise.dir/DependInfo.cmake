@@ -14,7 +14,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../server"
+  "../greetings"
   )
 
 # The set of dependency files which are needed:
@@ -23,7 +23,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/server/CMakeFiles/server.dir/DependInfo.cmake"
+  "/home/bong/CLionProjects/gRPC_exercise/cmake-build-debug/greetings/CMakeFiles/target.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
